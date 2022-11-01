@@ -4,23 +4,7 @@
 #include <cmath>
 
 const double STEP = 0.001;
-const double RATIO = 2;
-
-void drawCircle(int x, int y, int r)
-{
-	for (double i = 0; i < 2 * M_PI; i += STEP)
-	{
-		drawPixel(x + r * std::sin(i), y + r * std::cos(i));
-	}
-}
-
-void drawHalfCircle(int x, int y, int r)
-{
-	for (double i = 0.5 * M_PI; i < 1.5 * M_PI; i += STEP)
-	{
-		drawPixel(x + r * std::sin(i), y + r * std::cos(i));
-	}
-}
+const double RATIO = 1.7;
 
 void draw_circle(double x, double y, double r)
 {
